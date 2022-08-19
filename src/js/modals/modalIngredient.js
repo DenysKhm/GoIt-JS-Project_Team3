@@ -5,16 +5,15 @@ refs.closeModalIngredientBtn.addEventListener('click', closeModal);
 
 function onOpenModalIngredient(e) {
   const dataType = e.target.getAttribute('data-type');
-  e.preventDefault()
+  e.preventDefault();
   if (dataType === 'open-ingredient') {
-    toggleModal(refs.backdropCocktail)
-    toggleModal(refs.backdropIngredient)
-
+    toggleModal(refs.backdropCocktail);
+    toggleModal(refs.backdropIngredient);
   }
 }
 
 function closeModal(e) {
-  toggleModal(refs.backdropIngredient)
+  toggleModal(refs.backdropIngredient);
 }
 
 function toggleModal(element) {
