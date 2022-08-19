@@ -1,6 +1,6 @@
 // import { getDatabase, ref, push, onValue } from "firebase/database";
 // import { getUser } from "./firebase-authorization";
-
+//add firebase db
 
 // let arrayIdMessage = [];
 
