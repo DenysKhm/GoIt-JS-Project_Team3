@@ -55,9 +55,6 @@ export default class DrinkingUser {
     }
 
 
-
-
-
     importCocktails(data) {
         for (let i in data) {
             this.addFavouriteCocktailById(data[i])
