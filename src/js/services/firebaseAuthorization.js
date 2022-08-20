@@ -38,6 +38,13 @@ const provider = new GoogleAuthProvider();
 //     // }
 // }
 
+//Після авторизації фетчимо юзера.
+// authUser.uid ~ drinkingUser.Id; айдішки рівні за смислом.
+
+//Забираю 
+//Коли клікає перевіряти на ми пушимо зміни.
+
+
 function userRegistration(email, password) {
   createUserWithEmailAndPassword(auth, email, password)
     .then(userCredential => {
@@ -119,3 +126,5 @@ function userSignOut() {
 export function getUser() {
   return auth.currentUser;
 }
+
+
