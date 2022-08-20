@@ -1,9 +1,9 @@
 import { refs } from '../config/refs';
 
-refs.buttonLogin.addEventListener('click', toggleModal);
-refs.closeModalBtnSignIn.addEventListener('click', toggleModal);
+refs.buttonLogin.addEventListener('click', toggleModalSignIn);
+refs.closeModalBtnSignIn.addEventListener('click', toggleModalSignIn);
 
-function toggleModal() {
+function toggleModalSignIn() {
   refs.modalSignIn.classList.toggle('visually-hidden');
   console.log('qwe');
 }
