@@ -20,7 +20,7 @@ const provider = new GoogleAuthProvider();
 // const db = getDatabase();
 
 // TODO Change - Add listener when modal open
-// refs.buttonLoginWithMailPassword.addEventListener("click", onLoginClick);
+// --- refs.buttonLoginWithMailPassword.addEventListener("click", onLoginClick);
 // refs.buttonLoginWithGoogle.addEventListener("click", onLoginClick);
 // refs.buttonLogin.addEventListener("click", onLoginClick);
 
