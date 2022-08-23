@@ -8,11 +8,6 @@
   margin-bottom: 55px;
 }
 
-.gallery__container {
-  // padding-top: 60px;
-  // padding-bottom: 60px;
-}
-
 .gallery__title {
   margin-bottom: 60px;
   text-align: center;
@@ -43,8 +38,6 @@
   display: flex;
   flex-wrap: wrap;
   // justify-content: space-between;
-  // padding-left: 20px;
-  // padding-right: 20px;
 
   @include mq(tab) {
     --card-item: 2;
