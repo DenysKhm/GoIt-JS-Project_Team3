@@ -1,7 +1,6 @@
 // --- common styles
 .gallery {
   font-family: var(--gallery-font-family);
-  // outline: 2px dotted limegreen;
 }
 
 .gallery-section {
@@ -99,7 +98,7 @@
   box-sizing: border-box;
   &:hover,
   &:focus {
-    box-shadow: -10px 10px 20px #acabab, 10px -10px 20px #FFFFFF;
+    box-shadow: -10px 10px 20px #acabab, 10px -10px 10px #ffffff;
   }
 }
 

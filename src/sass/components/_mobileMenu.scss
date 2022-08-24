@@ -37,10 +37,9 @@
   width: 100vw;
   height: 70%;
   padding: 32px 20px;
-
+  border-radius: 0 0 0 25%;
   background-color: var(--mob-menu-bg-color);
-
-  transition: all var(--menu-transition);
+  transition: all 400ms ease-in-out;
 }
 
 // menu toggle button
@@ -76,7 +75,7 @@
   &.is-active .menu__close-icon {
     opacity: 1;
   }
-  transition: all var(--menu-transition);
+  transition: all 250ms ease-in-out;
   &:hover,
   &:focus {
     filter: drop-shadow(-2px 2px 2px #6f6e6e);
@@ -84,7 +83,7 @@
 }
 
 .menu-toggle__icon {
-  transition: all var(--menu-transition);
+  transition: all 400ms ease-in-out;
   fill: var(--btn-mob-menu-color);
 }
 
@@ -104,7 +103,7 @@
 // logo
 .menu__logo {
   display: none;
-  transition: all var(--menu-transition);
+  transition: all 250ms ease-in-out;
   &:hover,
   &:focus {
     filter: drop-shadow(-2px 2px 2px #6f6e6e);
@@ -125,7 +124,6 @@
 .menu__list {
   display: flex;
   flex-direction: column;
-  //   text-align: left;
   font-weight: 400;
   font-size: 28px;
   line-height: 0.86;
@@ -176,12 +174,12 @@
   top: -3px;
   font-family: var(--title-font-family);
   padding: 3px 10px;
-  background-color: var(--accent-color);
-  color: var(--body-background-color);
-  // margin-right: 40px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
+  background-color: var(--accent-color);
+  color: var(--body-background-color);
+  transition: all 250ms ease-in-out;
 
   @include mq(tab) {
     padding: 5px 15px;
@@ -196,7 +194,6 @@
 
 // search
 .menu__search {
-
   margin-bottom: 40px;
   position: relative;
   @include mq(tab) {
@@ -222,7 +219,6 @@
   @include mq(fab) {
     width: 50%;
   }
-
 }
 
 .menu__search-btn {
@@ -242,16 +238,10 @@
   width: 39px;
   height: 1px;
   background-color: var(--accent-color);
-
   transform: rotate(90deg);
 }
 
-.menu__nav-link {
-  color: var(--menu-mob-colorg);
-  background-color: transparent;
-  border: 0;
-}
-
+// menu links
 .menu__nav-list {
   @include mq(tab-only) {
     display: flex;
@@ -265,14 +255,16 @@
   font-size: 28px;
   line-height: 0.86;
   color: var(--menu-mob-color);
-
-  transition: all var(--menu-transition);
+  transition: all 250ms ease-in-out;
 
   &::before {
-    content: '♥';
+    content: '\1F9E1';
     color: transparent;
   }
 
+  &:first-child {
+    padding: 1px 7px;
+  }
   &:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -284,8 +276,16 @@
 }
 
 .menu__fav-item {
+  padding: 0;
   &::before {
-    content: '♥';
+    content: '\1F9E1';
+    outline: none;
     color: var(--accent-color);
   }
+}
+
+.menu__nav-link {
+  color: var(--menu-mob-colorg);
+  background-color: transparent;
+  border: 0;
 }
